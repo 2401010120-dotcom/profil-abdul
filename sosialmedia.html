@@ -67,7 +67,8 @@ nav ul li a:hover{
     min-height: 100vh;
     background:
     linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-    url("foto.jpg");
+    url("foto1.jpg");
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -263,6 +264,45 @@ section{
     color: #cbd5e1;
 }
 
+/* MUSIC PLAYER */
+.music-player{
+    position: fixed;
+    top: 95px;
+    right: 20px;
+    z-index: 999;
+
+    width: 320px;
+
+    background: rgba(15,23,42,0.95);
+    backdrop-filter: blur(10px);
+
+    padding: 25px;
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.music-player h2{
+    margin-bottom: 15px;
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+.music-player p{
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.music-player audio{
+    width: 100%;
+}
+
 /* FOOTER */
 footer{
     text-align: center;
@@ -290,12 +330,34 @@ footer{
         margin-top: 15px;
     }
 
+    .music-player{
+        width: 90%;
+        right: 5%;
+        top: 120px;
+    }
+
 }
 
 </style>
 </head>
 
 <body>
+
+<!-- MUSIC PLAYER -->
+<div class="music-player">
+
+    <h2>🎵 Musik Favorit</h2>
+
+    <p>
+        Dengarkan musik sambil menjelajahi website saya.
+    </p>
+
+    <audio controls autoplay loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser tidak mendukung audio.
+    </audio>
+
+</div>
 
 <!-- NAVBAR -->
 <nav>
@@ -355,10 +417,10 @@ footer{
             <p>Teknik Elektro</p>
         </div>
 
-	<div class="data-box">
-    		<h3>Pendidikan</h3>
-    		<p>Universitas Maritim Raja Ali Haji</p>
-	</div>
+        <div class="data-box">
+            <h3>Kampus</h3>
+            <p>Universitas Maritim Raja Ali Haji</p>
+        </div>
 
     </div>
 
